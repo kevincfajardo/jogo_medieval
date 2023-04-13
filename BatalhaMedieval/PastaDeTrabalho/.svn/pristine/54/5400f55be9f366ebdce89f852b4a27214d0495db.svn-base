@@ -1,0 +1,65 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package batalhamedieval;
+
+import java.util.Random;
+/**
+ *
+ * @author Aluno
+ */
+public class RpgWeapons {
+    Random rand = new Random();
+    public String weaponName;
+    private int damage;
+    private int atackSpeed;
+
+    public RpgWeapons(String weaponName, int damage, int atackSpeed) {
+        this.weaponName = weaponName;
+        this.damage = damage;
+        this.atackSpeed = atackSpeed;
+    }
+
+    public String getWeaponName() {
+        return weaponName;
+    }
+
+    public void setWeaponName(String weaponName) {
+        this.weaponName = weaponName;
+    }
+
+    public int getDamage() {
+        return damage;
+    }
+
+    public void setDamage(int damage) {
+        this.damage = damage;
+    }
+
+    public int getAtackSpeed() {
+        return atackSpeed;
+    }
+
+    public void setAtackSpeed(int atackSpeed) {
+        this.atackSpeed = atackSpeed;
+    }
+    
+    public boolean weaponAttack(int dex){
+        int missHit = 6 - dex;
+        int dice = rand.nextInt(6);
+        if(dice>missHit){
+            return true;
+        } else {
+            return false;
+        }
+    }
+    
+    public int attackDamage(int strn){
+        int dice = rand.nextInt(damage);
+        int dmg = dice + strn;
+        return dmg;
+    }
+    
+}
