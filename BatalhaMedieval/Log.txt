@@ -1,41 +1,28 @@
-Celestia Ataca com um(a) Bastão
-jorge Ataca com um(a) Machado
-jorge errou o ataque
-jorge Acertou um ataque em Celestia
-Celestia Recebeu: 16 de dano
-Celestia Ataca com um(a) Bastão
-jorge errou o ataque
-Celestia Ataca com um(a) Bastão
-jorge errou o ataque
-Celestia Ataca com um(a) Bastão
-jorge errou o ataque
-jorge Ataca com um(a) Machado
-jorge Acertou um ataque em Celestia
-Celestia Recebeu: 23 de dano
-Celestia Ataca com um(a) Bastão
-jorge errou o ataque
-Celestia Ataca com um(a) Bastão
-jorge errou o ataque
-Celestia Ataca com um(a) Bastão
-jorge errou o ataque
-Celestia Ataca com um(a) Bastão
-jorge errou o ataque
-jorge Ataca com um(a) Machado
-jorge errou o ataque
-Celestia Ataca com um(a) Bastão
-jorge errou o ataque
-Celestia Ataca com um(a) Bastão
-Celestia Acertou um ataque em jorge
-jorge Recebeu: 16 de dano
-Celestia Ataca com um(a) Bastão
-jorge errou o ataque
-Celestia Ataca com um(a) Bastão
-Celestia Acertou um ataque em jorge
-jorge Recebeu: 16 de dano
-jorge Ataca com um(a) Machado
-jorge Acertou um ataque em Celestia
-Celestia Recebeu: 20 de dano
+Belial Ataca com um(a) Espada
+Asmodeu Ataca com um(a) Lança
+Asmodeu Acertou um ataque em Belial
+ || Chance de erro: 3 dado: 4
+Asmodeu errou o ataque
+Belial Recebeu: 18 de dano
+Belial Ataca com um(a) Espada
+Belial Acertou um ataque em Asmodeu
+ || Chance de erro: 2 dado: 3
+Asmodeu Recebeu: 14 de dano
+Asmodeu Ataca com um(a) Lança
+Asmodeu errou o ataque
+Belial Ataca com um(a) Espada
+Belial Acertou um ataque em Asmodeu
+ || Chance de erro: 2 dado: 4
+Asmodeu Recebeu: 10 de dano
+Asmodeu Ataca com um(a) Lança
+Asmodeu Acertou um ataque em Belial
+ || Chance de erro: 3 dado: 5
+Belial Recebeu: 16 de dano
+Belial Ataca com um(a) Espada
+Asmodeu errou o ataque
+Belial Ataca com um(a) Espada
+Asmodeu errou o ataque
 /////////////////////////////
-Celestia venceu essa partida!!!
+Asmodeu venceu essa partida!!!
 Game Over
 /////////////////////////////

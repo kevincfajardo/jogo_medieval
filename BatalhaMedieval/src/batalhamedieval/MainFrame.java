@@ -470,15 +470,15 @@ public class MainFrame extends javax.swing.JFrame {
                     Logger.getLogger(MainFrame.class.getName()).log(Level.SEVERE, null, ex);
                 }
                 
-                
-               if(p1.weaponAttack(p1.getDextery())){
+               int[] attack = p1.weaponAttack(p1.getDextery());
+               if(attack[1]>attack[0]){
                     txtLog.setText(txtLog.getText()+l1.hitMsg(p2Name));
                     try {
-                        callLog(l1.hitMsg(p2Name) + "");
+                        callLog(l1.hitMsg(p2Name) + 
+                                " || Chance de erro: " + attack[0] + " dado: " + attack[1] + "\n");
                     } catch (IOException ex) {
                         Logger.getLogger(MainFrame.class.getName()).log(Level.SEVERE, null, ex);
                     }
-                    
                     dmgValue = p1.attackDamage(p1.getDamage());
                     p2.takeDmg(dmgValue);
                     txtLog.setText(txtLog.getText()+l1.dmgMsg(p2Name, dmgValue));
@@ -535,10 +535,12 @@ public class MainFrame extends javax.swing.JFrame {
                       Logger.getLogger(MainFrame.class.getName()).log(Level.SEVERE, null, ex);
                   }
                   
-               if(p2.weaponAttack(p2.getDextery())){
+               int[] attack = p2.weaponAttack(p2.getDextery());
+               if(attack[1]>attack[0]){
                     txtLog.setText(txtLog.getText()+l2.hitMsg(p1Name));
                     try {
-                        callLog(l2.hitMsg(p1Name));
+                        callLog(l2.hitMsg(p1Name) + 
+                                " || Chance de erro: " + attack[0] + " dado: " + attack[1] + "\n");
                     } catch (IOException ex) {
                         Logger.getLogger(MainFrame.class.getName()).log(Level.SEVERE, null, ex);
                     }

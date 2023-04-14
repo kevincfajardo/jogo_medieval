@@ -44,14 +44,11 @@ public class RpgWeapons extends RpgClass{
         this.attackSpeed = atackSpeed;
     }
     
-    public boolean weaponAttack(int dex){
-        int missHit = 6 - dex;
-        int dice = rand.nextInt(6);
-        if(dice>missHit){
-            return true;
-        } else {
-            return false;
-        }
+    public int[] weaponAttack(int dex){
+        int[] info = new int[2];
+        info[0] = 6 - dex;
+        info[1] = rand.nextInt(6);
+        return info;
     }
     
     public int attackDamage(int strn){
