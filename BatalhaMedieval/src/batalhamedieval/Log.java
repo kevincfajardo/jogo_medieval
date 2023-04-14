@@ -27,7 +27,7 @@ public class Log {
     }
     
     public String wimMsg(){
-        return "/////////////////////////////"
+        return "/////////////////////////////\n"
         +this.player+" venceu essa partida!!!" + "\nGame Over\n"
         +"/////////////////////////////";
     }

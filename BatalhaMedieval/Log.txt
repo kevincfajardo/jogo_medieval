@@ -1,1 +1,41 @@
-Player - 1 errou o ataque
+Celestia Ataca com um(a) Bastão
+jorge Ataca com um(a) Machado
+jorge errou o ataque
+jorge Acertou um ataque em Celestia
+Celestia Recebeu: 16 de dano
+Celestia Ataca com um(a) Bastão
+jorge errou o ataque
+Celestia Ataca com um(a) Bastão
+jorge errou o ataque
+Celestia Ataca com um(a) Bastão
+jorge errou o ataque
+jorge Ataca com um(a) Machado
+jorge Acertou um ataque em Celestia
+Celestia Recebeu: 23 de dano
+Celestia Ataca com um(a) Bastão
+jorge errou o ataque
+Celestia Ataca com um(a) Bastão
+jorge errou o ataque
+Celestia Ataca com um(a) Bastão
+jorge errou o ataque
+Celestia Ataca com um(a) Bastão
+jorge errou o ataque
+jorge Ataca com um(a) Machado
+jorge errou o ataque
+Celestia Ataca com um(a) Bastão
+jorge errou o ataque
+Celestia Ataca com um(a) Bastão
+Celestia Acertou um ataque em jorge
+jorge Recebeu: 16 de dano
+Celestia Ataca com um(a) Bastão
+jorge errou o ataque
+Celestia Ataca com um(a) Bastão
+Celestia Acertou um ataque em jorge
+jorge Recebeu: 16 de dano
+jorge Ataca com um(a) Machado
+jorge Acertou um ataque em Celestia
+Celestia Recebeu: 20 de dano
+/////////////////////////////
+Celestia venceu essa partida!!!
+Game Over
+/////////////////////////////

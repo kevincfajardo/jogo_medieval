@@ -5,13 +5,9 @@
  */
 package batalhamedieval;
 
-import java.io.File;
+import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.io.PrintWriter;
-import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
-import java.nio.file.Path;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -278,6 +274,7 @@ public class MainFrame extends javax.swing.JFrame {
         //Pra continuar de onde parou, em caso de apertar interromper
         if(!_continue){
             defineCharacter();
+            _continue = false;
         }
         flagP1 = true;
         flagP2 = true;
@@ -291,12 +288,22 @@ public class MainFrame extends javax.swing.JFrame {
         flagP1 = false;
         flagP2 = false;
         _continue = true;
+        try {
+            callLog("Jogo Interrompido \n\n");
+        } catch (IOException ex) {
+            Logger.getLogger(MainFrame.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_btnStopActionPerformed
 
     private void btnRestartActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRestartActionPerformed
         flagP1 = false;
         flagP2 = false;
         _continue = false;
+        try {
+            callLog("Jogo Reiniciado \n\n");
+        } catch (IOException ex) {
+            Logger.getLogger(MainFrame.class.getName()).log(Level.SEVERE, null, ex);
+        }
         txtLog.setText("");
         defineCharacter();
         flagP1 = true;
@@ -428,11 +435,9 @@ public class MainFrame extends javax.swing.JFrame {
     }
     
     private void callLog(String txt) throws IOException{
-        try (FileWriter arq = new FileWriter("Log.txt")) {
-            //String content = readFile("test.txt", StandardCharsets.UTF_8);
-            PrintWriter gravarArq = new PrintWriter(arq);
-            //gravarArq.print(texto+txt);
-            gravarArq.print(txt);
+        try (FileWriter fw = new FileWriter("Log.txt", true);
+                BufferedWriter bw = new BufferedWriter(fw)) {
+            bw.write(txt);
         } catch (Exception e){
             System.out.println(e);
         }
@@ -469,7 +474,7 @@ public class MainFrame extends javax.swing.JFrame {
                if(p1.weaponAttack(p1.getDextery())){
                     txtLog.setText(txtLog.getText()+l1.hitMsg(p2Name));
                     try {
-                        callLog(l1.hitMsg(p2Name));
+                        callLog(l1.hitMsg(p2Name) + "");
                     } catch (IOException ex) {
                         Logger.getLogger(MainFrame.class.getName()).log(Level.SEVERE, null, ex);
                     }
